@@ -66,6 +66,9 @@
   </style>
 </head>
 <body>
+  <audio id="bgMusic" src="Minion song.mp3" autoplay loop hidden>
+    
+  </audio>
   <!-- PAGE 1: Initial Click Me -->
   <div id="page1" class="page active">
     <div class="container">
@@ -113,7 +116,7 @@
         </svg>
       </div>
       <div class="info-box">
-        <strong>💡 Tip:</strong> I'm Bob, a lovable minion, and I have a very special question for you! 💛
+          <strong>💡 Tip:</strong> I'm Bob, your favorite minion, and I have a very special question for you! 💛
       </div>
       <div class="clickable-box" onclick="goToPage(2)" style="margin-top:28px">💛 Click Me to Continue 💛</div>
     </div>
@@ -231,7 +234,7 @@
         </svg>
       </div>
       <div class="info-box" style="background:#e8f5e9;border-left-color:#4CAF50">
-        <strong>💕 Congratulations!</strong> You just made me the happiest minion in the world! This is the start of an amazing journey together.
+          <strong>💕 Congratulations!</strong> You just made me the happiest minion in the world!
       </div>
       <p style="font-size:18px;color:#4CAF50;margin:20px 0;font-style:italic">Thank you for being my Valentine! 💛💚💙💜🧡</p>
       <button onclick="goToPage(1)" style="margin-top:24px">Start Over ↻</button>
@@ -259,42 +262,11 @@
     </div>
   </div>
 
-  <!-- MUSIC MODAL -->
-  <div id="musicModal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close" onclick="closeMusicModal()">✕</span>
-      <h2 style="color:#9b59b6;margin-top:0">🎵 Background Music</h2>
-      <p style="color:#888;margin:12px 0;font-size:14px">Choose a song to set the mood:</p>
-      <div style="display:flex;flex-direction:column;gap:12px;margin:20px 0">
-        <button onclick="playSong('https://www.youtube.com/embed/q-xIruS_e0w')" style="background:linear-gradient(135deg,#ff9800,#f57c00);padding:14px;text-align:left;border-radius:10px;border:none;color:#fff;cursor:pointer;transition:all 0.3s;font-size:14px">
-          <span style="font-weight:700;display:block;margin-bottom:4px">🎤 Despicable Me - Minion Song</span>
-          <span style="font-size:12px;opacity:0.9">"It's So Easy" ✨</span>
-        </button>
-        <button onclick="playSong('https://www.youtube.com/embed/DYJbPvWgp3E')" style="background:linear-gradient(135deg,#2196F3,#1976D2);padding:14px;text-align:left;border-radius:10px;border:none;color:#fff;cursor:pointer;transition:all 0.3s;font-size:14px">
-          <span style="font-weight:700;display:block;margin-bottom:4px">🎸 Minions Banana Song</span>
-          <span style="font-size:12px;opacity:0.9">The cutest & most catchy 💛</span>
-        </button>
-        <button onclick="playSong('https://www.youtube.com/embed/0j0Pnf-Zj5E')" style="background:linear-gradient(135deg,#4CAF50,#388E3C);padding:14px;text-align:left;border-radius:10px;border:none;color:#fff;cursor:pointer;transition:all 0.3s;font-size:14px">
-          <span style="font-weight:700;display:block;margin-bottom:4px">🎶 Minions Love Song</span>
-          <span style="font-size:12px;opacity:0.9">Perfect for Valentine's Day! 💕</span>
-        </button>
-        <button onclick="playSong('https://www.youtube.com/embed/OMHjUG1zz6s')" style="background:linear-gradient(135deg,#e91e63,#c2185b);padding:14px;text-align:left;border-radius:10px;border:none;color:#fff;cursor:pointer;transition:all 0.3s;font-size:14px">
-          <span style="font-weight:700;display:block;margin-bottom:4px">🎶 Minions Theme Song</span>
-          <span style="font-size:12px;opacity:0.9">The official anthem 💛</span>
-        </button>
-      </div>
-      <div id="videoPlayer" style="margin:20px 0;display:none;border-radius:10px;overflow:hidden">
-        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;background:#000">
-          <iframe id="songFrame" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" allow="autoplay;encrypted-media"></iframe>
-        </div>
-      </div>
-      <button onclick="closeMusicModal()" style="background:#ddd;color:#333;width:100%;margin-top:14px;padding:12px;border-radius:8px;border:none;cursor:pointer;font-weight:600;transition:all 0.3s">Close</button>
-    </div>
-  </div>
+  
 
   <!-- Audio Background Music -->
   <audio id="bgAudio" loop autoplay>
-    <source src="https://tuna.voicemod.net/sound/673062a9-da78-4cfe-8b23-8510dd05ac75" type="audio/mpeg">
+    <source src="Minion song.mp3" type="audio/mpeg">
   </audio>
   <div class="audio-player" id="audioPlayer" onclick="toggleMusic()">
     <span id="musicStatus">🔊 Music ON</span>
